@@ -12,7 +12,7 @@
   <header class="topbar" id="topo">
     <div class="container nav">
       <div class="logo">
-        <img src="/Logo.jpg" alt="Logo Rita Cunha">
+        <img src="/ritacunha/Logo.jpg" alt="Logo Rita Cunha">
       </div>
 
       <button id="menuBtn" class="menuBtn" aria-label="Abrir menu" aria-expanded="false">
@@ -55,7 +55,7 @@
     <div class="bar">Sobre</div>
 
     <div class="container sobre-grid">
-      <img src="/consultora.jpg" alt="Foto da consultora" />
+      <img src="/ritacunha/consultora.jpg" alt="Foto da consultora" />
 
       <div>
         <h2>Rita Cunha</h2>
@@ -72,7 +72,7 @@
     </div>
   </section>
 
-  <!-- PÁGINA 4: SERVIÇOS -->
+  <!-- ✅ PÁGINA 4: SERVIÇOS -->
   <section class="section servicos" id="servicos">
     <div class="bar center">
       <span class="pill">Conheça nossos serviços</span>
@@ -80,38 +80,38 @@
 
     <div class="container servicesGrid">
       <article class="serviceCard">
-        <img src="/servico-1.jpg" alt="Coloração pessoal" />
+        <img src="/ritacunha/servico-1.jpg" alt="Coloração pessoal" />
         <h4><br></h4>
       </article>
 
       <article class="serviceCard">
-        <img src="/servico-2.jpg" alt="Personal shopping" />
+        <img src="/ritacunha/servico-2.jpg" alt="Personal shopping" />
         <h4><br></h4>
       </article>
 
       <article class="serviceCard">
-        <img src="/servico-3.jpg" alt="Closet cleaning" />
+        <img src="/ritacunha/servico-3.jpg" alt="Closet cleaning" />
         <h4><br></h4>
       </article>
 
       <article class="serviceCard">
-        <img src="/servico-4.jpg" alt="Marketing de moda" />
+        <img src="/ritacunha/servico-4.jpg" alt="Marketing de moda" />
         <h4><br></h4>
       </article>
 
       <article class="serviceCard">
-        <img src="/servico-5.jpg" alt="Brechó" />
+        <img src="/ritacunha/servico-5.jpg" alt="Brechó" />
         <h4></h4>
       </article>
 
       <article class="serviceCard">
-        <img src="/servico-6.jpg" alt="Consultoria empresarial" />
+        <img src="/ritacunha/servico-6.jpg" alt="Consultoria empresarial" />
         <h4><br></h4>
       </article>
     </div>
   </section>
 
-  <!-- PÁGINA 5: VÍDEO + CTA INSTAGRAM -->
+  <!-- ✅ PÁGINA 5: VÍDEO + CTA WHATSAPP -->
   <section class="section videoSection" id="video">
     <div class="container videoWrap">
       <div class="videoPlaceholder" aria-label="Área do vídeo">
