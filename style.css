@@ -482,8 +482,10 @@ body {
 }
 
 .videoPlaceholder {
-  width: min(860px, 95%);
-  aspect-ratio: 16/9;
+  width: 100;
+  max-width: 400px;
+  aspect-ratio: 9/16;
+  margin: 0 auto;
   background: #0d0d0d;
   border-radius: 16px;
   position: relative;
