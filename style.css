@@ -1,0 +1,389 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#2b2b2b;
+  background:#ffffff;
+  line-height:1.5;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* ================= NAVBAR ================= */
+
+.topbar{
+  background:#8c1f1f;
+  padding:18px 0;
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo img{
+  height:50px;
+  width:auto;
+  display:block;
+}
+
+.menu{
+  display:flex;
+  gap:28px;
+}
+
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+  letter-spacing:.8px;
+  transition:opacity .2s ease;
+}
+
+.menu a:hover{
+  opacity:.75;
+}
+
+.menuBtn{
+  display:none;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+.menuBtn span{
+  display:block;
+  width:25px;
+  height:3px;
+  background:#fff;
+  margin:5px 0;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  height:700px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+
+  background-image:url("./assets/capa.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(255,255,255,0.65);
+}
+
+.hero h1{
+  position:relative;
+  font-size:64px;
+  letter-spacing:10px;
+  font-weight:600;
+  color:#1f1f1f;
+  text-align:center;
+}
+
+/* ================= SEÇÕES ================= */
+
+.section{
+  padding:100px 0;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 28px;
+  background:#1f1f1f;
+  color:#fff;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+  transition:transform .2s ease, opacity .2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  opacity:.9;
+}
+
+.bar{
+  background:#8c1f1f;
+  color:#fff;
+  padding:18px;
+  font-weight:700;
+  text-align:left;
+}
+
+.bar.center{
+  text-align:center;
+}
+
+.pill{
+  background:rgba(255,255,255,.85);
+  padding:12px 24px;
+  border-radius:16px;
+  font-weight:700;
+  color:#3a3a3a;
+}
+
+/* ================= SOBRE ================= */
+
+.sobre-grid{
+  display:grid;
+  grid-template-columns:400px 1fr;
+  gap:60px;
+  margin-top:50px;
+  align-items:center;
+}
+
+.sobre-grid img{
+  width:100%;
+  border-radius:24px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.15);
+  object-fit:cover;
+}
+
+.texto-grande{
+  font-size:22px;
+  margin-bottom:25px;
+  color:#5c5c5c;
+}
+
+/* ================= PÁGINA 4 - SERVIÇOS ================= */
+
+.servicesGrid{
+  margin-top:60px;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:32px;
+}
+
+.serviceCard{
+  position:relative;
+  border-radius:24px;
+  overflow:hidden;
+  min-height:320px;
+  cursor:pointer;
+  box-shadow:0 20px 60px rgba(0,0,0,0.08);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.serviceCard:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 80px rgba(0,0,0,0.15);
+}
+
+.serviceCard img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:.45;
+  transition:opacity .3s ease;
+}
+
+.serviceCard:hover img{
+  opacity:.65;
+}
+
+/* overlay branco suave */
+.serviceCard::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(255,255,255,0.35);
+}
+
+/* TEXTO CENTRALIZADO PERFEITAMENTE */
+.serviceCard h4{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+  width:80%;
+  margin:0;
+
+  font-size:20px;
+  letter-spacing:2px;
+  font-weight:800;
+  text-transform:uppercase;
+  color:#8c1f1f;
+  z-index:2;
+}
+
+/* ================= PÁGINA 5 - VÍDEO ================= */
+
+.videoSection{
+  background:#ffffff;
+}
+
+.videoWrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:24px;
+}
+
+.videoPlaceholder{
+  width:min(900px, 95%);
+  aspect-ratio:16/9;
+  background:#0d0d0d;
+  border-radius:8px;
+  position:relative;
+  box-shadow:0 25px 70px rgba(0,0,0,0.2);
+}
+
+/* botão play */
+.playIcon{
+  position:absolute;
+  inset:0;
+  margin:auto;
+  width:95px;
+  height:65px;
+  background:#e11d2e;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.playIcon::before{
+  content:"";
+  border-left:20px solid #fff;
+  border-top:14px solid transparent;
+  border-bottom:14px solid transparent;
+  margin-left:5px;
+}
+
+/* botão whatsapp */
+.ctaWhatsapp{
+  padding:16px 36px;
+  border-radius:16px;
+  background:rgba(235,190,190,.55);
+  color:#6b2a2a;
+  font-weight:800;
+  letter-spacing:1px;
+  text-decoration:none;
+  transition:transform .2s ease;
+}
+
+.ctaWhatsapp:hover{
+  transform:translateY(-4px);
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  background:#f6f1f1;
+  padding:80px 0;
+  border-top:1px solid rgba(0,0,0,0.08);
+}
+
+.footerInner{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+}
+
+.cargo{
+  color:#8c1f1f;
+  font-weight:700;
+}
+
+.socials{
+  display:flex;
+  gap:14px;
+}
+
+.social{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.12);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  text-decoration:none;
+  color:#333;
+  transition:transform .2s ease;
+}
+
+.social:hover{
+  transform:translateY(-4px);
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:1024px){
+  .servicesGrid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:768px){
+
+  .hero{
+    height:500px;
+  }
+
+  .hero h1{
+    font-size:36px;
+    letter-spacing:5px;
+  }
+
+  .sobre-grid{
+    grid-template-columns:1fr;
+  }
+
+  .servicesGrid{
+    grid-template-columns:1fr;
+  }
+
+  .footerInner{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .menu{
+    display:none;
+    flex-direction:column;
+    background:#8c1f1f;
+    position:absolute;
+    right:20px;
+    top:70px;
+    padding:20px;
+    border-radius:12px;
+  }
+
+  .menu.is-open{
+    display:flex;
+  }
+
+  .menuBtn{
+    display:block;
+  }
+}
