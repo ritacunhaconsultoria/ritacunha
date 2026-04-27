@@ -284,14 +284,13 @@ body {
 
   background: 
     linear-gradient(
-      rgba(255,255,255,0.85), 
-      rgba(255,255,255,0.85)
+      rgba(250,246,242,0.88), 
+      rgba(250,246,242,0.88))
     ),
     url('/ritacunha/assets/capa.jpg');
 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 .consult-inner {
   max-width: 680px;
