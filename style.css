@@ -281,6 +281,14 @@ body {
 */
 .consult {
   text-align: center;
+  background: var(--creme);
+}
+
+/* PARTE COM IMAGEM */
+.consult-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 100px 20px;
 
   background: 
     linear-gradient(
@@ -292,10 +300,20 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  border-radius: 0 0 40px 40px; /* opcional, dá acabamento bonito */
 }
-.consult-inner {
-  max-width: 680px;
+
+/* FAIXA CREME (separação com Sobre) */
+.consult::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 120px;
+  background: var(--creme);
 }
+
+/* resto permanece igual */
 
 .consult-deco {
   font-size: 32px;
