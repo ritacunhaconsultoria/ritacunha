@@ -24,62 +24,18 @@
       </button>
 
       <nav id="menu" class="menu" aria-label="Menu principal">
-        <a href="#sobre">SOBRE</a>
-        <a href="#servicos">SERVIÇOS</a>
-        <div class="dropdown" id="dropdownConsultoria">
-           <a href="javascript:void(0)" class="dropbtn">CONSULTORIAS ▾</a>
-           <div class="dropdown-content" id="submenu">
-             <a href="https://ritacunhaconsultoria.github.io/empresarial/">Consultoria Empresarial</a>
-             <a href="https://ritacunhaconsultoria.github.io/comercial/">Consultoria Comercial</a>
-           </div>
-        </div>
-        <a href="#contato">CONTATO</a>
-      </nav>
-      <style>
-  /* AJUSTE NO CSS: Removido o Hover */
-  .dropdown-content {
-    display: none; /* Sempre oculto por padrão */
-    position: absolute;
-    background-color: #fff;
-    min-width: 220px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-    z-index: 1000;
-    top: 100%;
-    left: 0;
-  }
+      <a href="#sobre">SOBRE</a>
+      <a href="#servicos">SERVIÇOS</a>
+      <div class="dropdown" id="dropdownConsultoria">
+      <a href="javascript:void(0)" class="dropbtn nav-link">CONSULTORIAS ▾</a>
+    <div class="dropdown-content" id="submenu">
+      <a href="https://ritacunhaconsultoria.github.io/empresarial/">Consultoria Empresarial</a>
+      <a href="https://ritacunhaconsultoria.github.io/comercial/">Consultoria Comercial</a>
+    </div>
+  </div>
 
-  /* Esta classe será adicionada pelo JavaScript ao clicar */
-  .show-submenu {
-    display: block !important;
-  }
-
-  /* Estilo mobile (opcional: ajuste conforme seu layout) */
-  @media (max-width: 768px) {
-    .dropdown-content {
-      position: static;
-      box-shadow: none;
-      padding-left: 15px;
-    }
-  }
-</style>
-
-<script>
-  const btnConsultoria = document.getElementById('dropdownConsultoria');
-  const submenu = document.getElementById('submenu');
-
-  btnConsultoria.addEventListener('click', (e) => {
-    // Impede que o clique feche imediatamente se clicar no link pai
-    e.stopPropagation(); 
-    submenu.classList.toggle('show-submenu');
-  });
-
-  // Fecha o sub-menu se o usuário clicar em qualquer outro lugar da tela
-  window.addEventListener('click', () => {
-    if (submenu.classList.contains('show-submenu')) {
-      submenu.classList.remove('show-submenu');
-    }
-  });
-</script>
+  <a href="#contato">CONTATO</a>
+</nav>
     </div>
   </header>
 
