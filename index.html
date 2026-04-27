@@ -199,6 +199,23 @@
       btn.setAttribute('aria-expanded', isOpen);
       btn.classList.toggle('is-active', isOpen);
     });
+    // Lógica para abrir/fechar o sub-menu ao clicar
+     const consultBtn = document.getElementById('consultoriaBtn');
+     const consultContent = document.getElementById('dropdownContent');
+
+     consultBtn.addEventListener('click', (e) => {
+     e.stopPropagation(); // Impede o clique de fechar imediatamente
+    consultContent.classList.toggle('show');
+     });
+
+    // Fecha o menu se o usuário clicar fora dele
+     window.onclick = function(event) {
+     if (!event.target.matches('.dropdown-btn')) {
+       if (consultContent.classList.contains('show')) {
+          consultContent.classList.remove('show');
+    }
+  }
+}
 
     // Fechar menu ao clicar em um link
     menu.querySelectorAll('a').forEach(link => {
