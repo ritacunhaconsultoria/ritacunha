@@ -738,3 +738,79 @@ body {
   .consult h3 { font-size: 32px; }
   .video-title { font-size: 28px; }
 }
+/* ================= DROPDOWN (CONSULTORIA) ================= */
+
+/* Container do item Consultoria */
+.dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Transforma o botão para ficar idêntico aos seus links (SOBRE, SERVIÇOS) */
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.88); /* Mesma cor dos links do seu menu */
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  padding: 0;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  transition: color var(--trans);
+}
+
+.dropdown-btn:hover {
+  color: var(--branco);
+}
+
+/* A "caixinha" que fica escondida */
+.dropdown-content {
+  display: none; /* ESCONDE POR PADRÃO */
+  position: absolute;
+  top: 100%; /* Aparece logo abaixo do botão */
+  left: 0;
+  background-color: var(--vinho-dk); /* Usa a cor vinho que já está no seu root */
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  z-index: 1100;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-top: 10px; /* Pequeno espaçamento do topo */
+}
+
+/* Estilo dos links dentro da caixinha */
+.dropdown-content a {
+  color: var(--branco) !important;
+  padding: 12px 20px !important;
+  font-size: 11px !important;
+  display: block !important;
+  width: 100%;
+}
+
+.dropdown-content a::after {
+  display: none; /* Remove a linha branca debaixo nos sub-links */
+}
+
+.dropdown-content a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Classe que o JavaScript vai adicionar ao clicar */
+.show {
+  display: block !important;
+}
+
+/* Ajuste para mobile: no seu menu mobile, o sub-menu deve ser relativo */
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    background: rgba(0,0,0,0.2);
+    margin-top: 5px;
+  }
+}
