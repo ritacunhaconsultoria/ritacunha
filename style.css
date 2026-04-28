@@ -743,7 +743,7 @@ body {
 /* Container do item Consultoria */
 .dropdown {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
