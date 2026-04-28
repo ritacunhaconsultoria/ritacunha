@@ -751,6 +751,8 @@ body {
 /* Transforma o botão para ficar idêntico aos seus links (SOBRE, SERVIÇOS) */
 .dropdown-btn {
   background: none;
+  appearance: none;
+  -webkit-appearance: none;
   border: none;
   color: rgba(255,255,255,.88); /* Mesma cor dos links do seu menu */
   font-family: var(--font-sans);
