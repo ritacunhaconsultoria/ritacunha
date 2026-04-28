@@ -807,13 +807,29 @@ body {
   display: block !important;
 }
 
-/* Ajuste para mobile: no seu menu mobile, o sub-menu deve ser relativo */
+/* ================= AJUSTE PARA SMARTPHONE (ANDROID/IOS) ================= */
+
 @media (max-width: 768px) {
+  /* Faz o container ocupar a largura toda do menu celular */
+  .dropdown {
+    width: 100%;
+    flex-direction: column; 
+    align-items: flex-start; /* Alinha o texto à esquerda como os outros */
+  }
+
+  /* Faz o botão ocupar a linha toda */
+  .dropdown-btn {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Faz o sub-menu aparecer ABAIXO e empurrar o "Contato" */
   .dropdown-content {
-    position: static;
-    top: 0;
+    position: static;     /* O segredo: ele deixa de "flutuar" e vira um item da lista */
+    width: 100%;
+    background: rgba(0,0,0,0.2); /* Fundo um pouco mais escuro para destacar */
     box-shadow: none;
-    background: rgba(0,0,0,0.2);
     margin-top: 5px;
+    padding-left: 15px;   /* Dá um recuo para parecer sub-item */
   }
 }
