@@ -93,6 +93,7 @@ body {
 .menu {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 .menu a {
