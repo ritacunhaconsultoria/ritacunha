@@ -810,7 +810,7 @@ body {
 /* Ajuste para mobile: no seu menu mobile, o sub-menu deve ser relativo */
 @media (max-width: 768px) {
   .dropdown-content {
-    position: relative;
+    position: static;
     top: 0;
     box-shadow: none;
     background: rgba(0,0,0,0.2);
